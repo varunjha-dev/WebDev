@@ -12,8 +12,8 @@ console.log(typeof num2); //* "object"
 //! Comparing Numbers:
 let num3 = new Number(231);
 
-console.log(num1 == num2); //* Compares after converting `num2` to primitive.
-console.log(num2 == num3); //* Compares object references (different heap memory address).
+console.log(num1 == num2); //* Compares after converting `num2` to primitive. true
+console.log(num2 == num3); //* Compares object references (different heap memory address). false
 
 //* ****************************************************
 //* Number Methods
@@ -52,7 +52,7 @@ console.log(Math.sqrt(81));                     //* Output -> 9
 //* Math Object
 //* ****************************************************
 
-console.log(Math.E);   //* Euler's number: ~2.71.
+console.log(Math.E);   //* Euler's number: ~2.71.....
 console.log(Math.LN10); //* Natural log of 10 (means log 10 base e).
 console.log(Math.PI);  //* Pi value: ~3.14.
 

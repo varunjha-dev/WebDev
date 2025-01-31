@@ -44,8 +44,8 @@ console.log(a, b);         //* Output -> 4, 4
 
 
 //! String Concatenation:
-let greeting = "Hello ", name = "Rohit";
-console.log(greeting + name);  //* "Hello Rohit"
+let greeting = "Hello ", name = "Rohit"; // here name will be showing as deprecated, it's because name is a global property in JavaScript
+console.log(greeting + name);  //* "Hello Rohit" 
 
 //? Tricky cases:
 console.log("1" + 2);       //* "12" -> (First operand is string, hence all are considered as strings and concatenated.)
