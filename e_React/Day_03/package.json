@@ -1,0 +1,28 @@
+{
+  "name": "reactbasic",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Varun Jha",
+  "license": "ISC",
+  "description": "Learning React",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunjha-dev/WebDev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varunjha-dev/WebDev/issues"
+  },
+  "homepage": "https://github.com/varunjha-dev/WebDev#readme",
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
