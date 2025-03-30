@@ -14,8 +14,8 @@ export default function Header (){
         </div>
         {/* Now Text and images */}
         <div className="pt-16 pb-8 relative">
-            <img className="absolute h-110 w-60 top-0 left-0 z-[-10]" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="Vegetable" />
-            <img className="h-110 w-60 absolute top-0 right-0 z-[-10]" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"alt="sushi"/>
+            <img className="absolute h-120 w-80 top-0 left-0 z-[10]" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="Vegetable" />
+            <img className="h-120 w-80 absolute top-0 right-0 z-[10]" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"alt="sushi"/>
             <div className="text-white max-w-[70%] text-5xl font-bold container mx-auto text-center z-20">
             Order food & groceries. Discover best restaurants. Swiggy it!
             </div>

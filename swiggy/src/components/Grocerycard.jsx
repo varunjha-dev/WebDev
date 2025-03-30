@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-export default function Grocerycard({ foodData }) {
+export default function GroceryCard({ foodData }) {
     return (
-        <div>
+        <div className='flex-none'>
             <a href={foodData?.action?.link}>
             <img className="w-40 h-50 object-cover"
                 src={`https://media-assets.swiggy.com/swiggy/image/upload/${foodData?.imageId}`}
@@ -12,7 +12,7 @@ export default function Grocerycard({ foodData }) {
         </div>
     );
 }
-Grocerycard.propTypes = {
+GroceryCard.propTypes = {
     foodData: PropTypes.shape({
         imageId: PropTypes.string.isRequired, 
         action: PropTypes.shape({
