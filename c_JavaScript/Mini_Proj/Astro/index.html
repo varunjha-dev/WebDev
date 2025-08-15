@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Astrology Prediction</h1>
+        <form id="astro_form">
+            <div class="input-group">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" placeholder="Enter your first name" required name="name">
+            </div>
+            <div class="input-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" placeholder="Enter your surname" required name="surname">
+            </div>
+            <div class="input-group">
+                <label for="date">Date of Birth:</label>
+                <input type="number" id="date" placeholder="Enter day" min="1" max="31" required name="date">
+            </div>
+            <div class="input-group">
+                <label for="month">Month of Birth:</label>
+                <input type="number" id="month" placeholder="Enter month" min="1" max="12" required name="month">
+            </div>
+            <div class="input-group">
+                <label for="year">Year of Birth:</label>
+                <input type="number" id="year" placeholder="Enter year" min="1900" max="2024" required name="year">
+            </div>
+            <input type="submit" class="submit-btn" value="Get Insights">
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

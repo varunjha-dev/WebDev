@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    height: 200px;
+    width: 300px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color: wheat;
+}

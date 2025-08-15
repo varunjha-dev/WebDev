@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#heading {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 224);
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    gap: 20px;
+}
+
+img{
+    height: 200px;
+    border-radius: 50%;
+}
+
+.cards{
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+.container{
+    margin-top: 20px;
+
+}
+
+.inpu{
+    margin-left: 40vw;
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    padding:5px 10px;
+}
+
+button{
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(119, 119, 224);
+    color: white;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-size: 1rem;
+}
