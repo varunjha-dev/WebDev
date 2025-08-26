@@ -24,7 +24,7 @@ const { MongoClient } = require('mongodb');
 // Connection URL
 const url = "mongodb+srv://varunjhadev:VarunJha%402026@codingone.esu2mbh.mongodb.net/";
 
-//* Create MongoClient instance with connection URL
+//* Create MongoClient instance(obj) with connection URL
 const client = new MongoClient(url);
 
 //* ┌─────────────────────────────────────────────────────────────────────────────────┐
@@ -60,7 +60,7 @@ async function main() {
   //! const findResult = await collection.find({}).toArray(); 
   
   //* 💡 **Performance Note:**
-  //? collection.find({}) this akele don't do the N/w call, 
+  //? collection.find({}) this akele don't do the Network call, 
   //! its.toArray who actually made the call but this toArray can be fatal if it fetches all the data of size ex 5 gb
   //* Hence Findcursor of collections.find does the job of one by one execution and doesn't give eveerything at once
   
@@ -77,12 +77,12 @@ async function main() {
   //* ════════════════════════════════════════════════════════════════════════════════════
 
   //* 📤 **Single Document Insert**
-  // const insertResult = await collection.insertOne({name: "Varun", College: "GCET", City: "Gr. NOIDA"});
-  // console.log('Inserted documents =>', insertResult);
+  const insertResult = await collection.insertOne({name: "Varun", College: "GCET", City: "Gr. NOIDA"});
+  console.log('Inserted documents =>', insertResult);
 
   //* 📤 **Multiple Documents Insert**
-  // const insertResult = await collection.insertMany([{ a: 1 }, { a: 2 }, { a: 3 }]);
-  // console.log('Inserted documents =>', insertResult);
+  const insertResult1 = await collection.insertMany([{ a: 1 }, { a: 2 }, { a: 3 }]);
+  console.log('Inserted documents =>', insertResult1);
 
   //* ════════════════════════════════════════════════════════════════════════════════════
   //* 🔍 **FILTERED READ OPERATIONS** - Query with Conditions
@@ -148,4 +148,3 @@ main()
 //* 💡 **Best Practice:** Use cursors for iteration, toArray() only for small result sets
 //TODO 🔧 **Connection Pooling:** MongoClient automatically manages connection pools
 
-//* 🎓 **Perfect Example:** Complete MongoDB connection with all essential operations!
