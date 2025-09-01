@@ -9,7 +9,7 @@
 //! Import Mongoose ODM library for MongoDB operations
 // getting-started.js
 const mongoose = require('mongoose');
-
+require('dotenv').config(); // Load environment variables
 //* ════════════════════════════════════════════════════════════════════════════════════
 //* ⚡ **MAIN DATABASE CONNECTION FUNCTION** - Central Database Operations
 //* ════════════════════════════════════════════════════════════════════════════════════
@@ -17,7 +17,7 @@ const mongoose = require('mongoose');
 async function main() {
   //* 🔗 **Database Connection** - Connect to MongoDB Atlas
   //! Connect to MongoDB Atlas cluster with credentials
-  await mongoose.connect('mongodb+srv://varunjhadev:VarunJha%402026@codingone.esu2mbh.mongodb.net/Bookstore');
+  await mongoose.connect('process.env.MONGODB_URI');
 
   //? Alternative local connection with authentication:
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled

@@ -18,6 +18,9 @@ const main = require("./database");
 //! Import User model for database operations
 const User = require('./Models/users');
 
+// Load environment variables at the very top
+require('dotenv').config();
+
 //* ════════════════════════════════════════════════════════════════════════════════════
 //* ⚙️ **2. MIDDLEWARE CONFIGURATION** - Request Processing Setup
 //* ════════════════════════════════════════════════════════════════════════════════════
@@ -88,10 +91,10 @@ main()
     //? Handle successful database connection
     .then(async () => {
         console.log("Connected to DB");
-        
-        //* Start Express server on port 3000
-        app.listen(3000, (req, res) => {
-            console.log("Listening at port 3000");
+        // Use environment variable for port
+        const PORT = process.env.PORT || 3000;
+        app.listen(PORT, () => {
+            console.log(`Listening at port ${PORT}`);
         });
         
         //TODO Example query operation (commented for reference)
