@@ -8,6 +8,7 @@
 
 //! Import the MongoClient class from the 'mongodb' package
 const { MongoClient } = require('mongodb');
+require('dotenv').config(); // Load environment variables
 
 //? Alternative ES6 module import syntax:
 // import { MongoClient } from 'mongodb'
@@ -22,10 +23,10 @@ const { MongoClient } = require('mongodb');
 
 //! MongoDB Atlas connection string with credentials
 // Connection URL
-const url = "mongodb+srv://varunjhadev:VarunJha%402026@codingone.esu2mbh.mongodb.net/";
+const url = "zxcvbnm";
 
 //* Create MongoClient instance(obj) with connection URL
-const client = new MongoClient(url);
+const client = new MongoClient(process.env.MONGODB_URI);
 
 //* ┌─────────────────────────────────────────────────────────────────────────────────┐
 //* │ 📊 **3. DATABASE & COLLECTION SETUP**                                         │
