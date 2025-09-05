@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 
 async function main() {
     //! Connect to MongoDB Atlas - Instagram database
-    await mongoose.connect("mongodb+srv://varunjhadev:VarunJha%402026@codingone.esu2mbh.mongodb.net/Instagram");
+    await mongoose.connect("xxxxxxxxxxxxxxxxxxxxxxxxx");
     
     //? Connection successful - ready for operations
 }
